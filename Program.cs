@@ -13,7 +13,7 @@ public class HelloWorld{
     RecMove Heal = new("Heal", 10);
     Entity plr = new("Player",25,Slash,Hack,Heal);
     plr.weapon = new AtkWeapon("Iron Sword",30,2);
-    Entity emy = new("Goblin",30,Slash,Heal, new RecMove("Recover!", 50));
+    Entity emy = new("Goblin",30,Slash,Heal);
     //for the love of god tomorrow give this a proper class
     Console.WriteLine("=====================");
     plr.printEntity();
