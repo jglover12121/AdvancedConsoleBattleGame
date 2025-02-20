@@ -90,6 +90,27 @@ class AtkWeapon : Weapon{
   public new Type type = Type.ATK;
   public AtkWeapon(string _name, int _strength, int _rarity) : base(_name,_strength,_rarity){}
 }
+//Armor class 
+interface IArmor{
+    public string name;
+    public int strength;
+    public int rarity;
+    public void printArmor();
+    public void calculateDamage();
+}
+
+class Armor{
+  public string name{get; set;}
+  public int strength{get; set;}
+  public int rarity{get; set;}
+  public Armor(string _name, int _strength, int _rarity){
+    
+  }
+  public void printWeapon(){
+    Console.WriteLine(name + ": " + strength + "(" + rarity + ")");
+  }
+}
+
 
 //entity implementation
 class Entity{
