@@ -18,7 +18,7 @@ public class Program{
     Entity plr = new("Player",20,Slash,Hack,Heal);
     plr.armor = new Armor("Silver Armor",15,1);
     plr.weapon = new AtkWeapon("Iron Sword",10,1);
-    plr.calculateFullHealth(1);
+    plr.calculateFullHealth();
     Entity emy = new("Goblin",20,Slash,Heal);
     //emy.weapon = new AtkWeapon("God Slayer",50,3);
     //for the love of god tomorrow give this a proper class
